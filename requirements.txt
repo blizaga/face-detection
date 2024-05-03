@@ -1,0 +1,14 @@
+torch                         ==2.2.1
+torchvision                   ==0.17.1
+ultraylitics                  ==8.1.20
+flask                         ==2.2.3
+flask-reuploaded              ==1.4.0
+flask-wtf                     ==1.1.1
+gunicorn                      ==20.1.0
+omegaconf                     ==2.3.0
+altair                        ==4.2.2
+streamlit                     ==1.12.0
+opencv-python                 ==4.7.0.72
+ipython  # interactive notebook
+psutil  # system utilization
+thop>=0.1.1  # FLOPs computation

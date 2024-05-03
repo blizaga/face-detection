@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection with YOLOv8</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Include custom CSS for additional styling -->
+    <style>
+        body {
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4">Face Detection with YOLOv8</h1>
+
+        <h2 class="my-4">Upload an Image:</h2>
+        <form method="post" action="/" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="photo">Choose an image:</label>
+                {{ form.photo(class="form-control-file") }}
+            </div>
+            {{ form.submit(class="btn btn-primary") }}
+        </form>
+
+        {% if file_url %}
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Uploaded Image:</h2>
+                    <img src="{{ file_url }}" alt="Uploaded Image" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>Face Detection Result:</h2>
+                    <img src="{{ result_url }}" alt="Face Detection Result" class="img-fluid rounded">
+                </div>
+            </div>
+        {% endif %}
+        
+    </div>
+</body>
+</html>
