@@ -84,3 +84,8 @@ docker build -t farizalmustaqim/face-detection-using-yolov8:latest .
 docker run -it --rm -p 5000:5000 farizalmustaqim/face-detection-using-yolov8:latest
 
 ```
+
+## Live preview on Streamlit Cloud
+https://face-detection-yolov8.streamlit.app/
+
+![Alt Text](./images/streamlit.png)

@@ -1,6 +1,4 @@
 import streamlit as st
-import cv2
-import os
 from utils.face_detection import FaceDetection
 
 
