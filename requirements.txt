@@ -11,4 +11,5 @@ streamlit                     ==1.12.0
 opencv-python                 ==4.7.0.72
 ipython  # interactive notebook
 psutil  # system utilization
+numpy==1.26.4
 thop>=0.1.1  # FLOPs computation
